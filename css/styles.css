@@ -192,7 +192,7 @@ nav .btn {
    /* left: 425px; */
    /* top: -148px; */
 
-   background: url(medium-shot-woman-holding-ukranian-flag\ 1.png);
+   background: url(../img/medium-shot-woman-holding-ukranian-flag\ 1.png);
    background-repeat: no-repeat;
    object-fit: cover;
    object-position: top;
@@ -431,7 +431,7 @@ time {
    width: 1285px;
    height: 738px;
    margin: 0 83px 0 72px;
-   background-image: url(/img/Фон\ 5.png);
+   background-image: url(../img/Фон\ 5.png);
    background-repeat: no-repeat;
    background-size: 100%;
    object-fit: cover;
@@ -480,7 +480,7 @@ time {
    height: 395.52px;
    margin: 0 37.9px 0 0;
 
-   background: url(/img/430\ copy\ 1.png);
+   background: url(../img/430\ copy\ 1.png);
    transform: rotate(6.92deg);
    background-position: center;
 } */
@@ -489,7 +489,7 @@ time {
    width: 347px;
    height: 395.52px;
    
-   background: url(/img/image_556\ 1.png);
+   background: url(../img/image_556\ 1.png);
    background-repeat: no-repeat;
 } */
 
@@ -497,5 +497,5 @@ time {
    width: 430px;
    height: 439.61px;
    
-   background: url(/img/Подарунок.png);
+   background: url(../img/Подарунок.png);
 }
