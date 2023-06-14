@@ -100,6 +100,7 @@ conteiner {
 
 .main {
    display: flex;
+   flex-direction: column;
 }
 
 .header-section {
@@ -107,7 +108,7 @@ conteiner {
    display: flex;
    flex-wrap: wrap;
    width: 1440px;
-   height: 729px;
+   height: 100vh;
    left: 0px;
    top: 0px;
 }
@@ -124,8 +125,6 @@ header {
    align-items: center;
    /* gap: 590px; */
 
-   /* border: 2px solid gray;
-   border-radius: 5px; */
    z-index: 1;
 }
 
@@ -140,14 +139,17 @@ header {
    height: 59px;
 }
 
-.menu {
+ul {
    display: flex;
    flex: 1 1 auto;
    flex-direction: row;
-   justify-content: space-between;
    align-items: center;
-   list-style: none;
-   font-size: 18px; 
+   list-style: none; 
+}
+
+.header-section ul {
+   justify-content: space-between;
+   font-size: 18px;
 }
 
 .header-section .btn {
@@ -164,30 +166,26 @@ header {
 .header-section .image {
    /* position: absolute; */
    width: 1448px;
-   height: 877px;
+   height: 100vh;
+   /* margin: calc(-729px + 148px - 3px) 0 0 425px; */
    margin: calc(-729px + 148px - 3px) 0 0 425px;
    /* left: 425px; */
    /* top: -148px; */
 
-   background: url(../img/medium-shot-woman-holding-ukranian-flag\ 1.png);
+   background-image: url(../img/medium-shot-woman-holding-ukranian-flag\ 1.png);
    background-repeat: no-repeat;
    object-fit: cover;
-   object-position: top;
-
-   /* border: 2px solid gray;
-   border-radius: 5px; */
+   /* object-position: bottom; */
+   background-position: top;
 }
 
 .header-section h1 {
-   /* position: absolute; */
    width: 698px;
    line-height: 264px;
    margin: calc(200px - 63px - 64.19px) 0 0 100px;
    /* left: 100px;
    top: 200px; */
 
-   font-family: inherit;
-   font-style: normal;
    font-weight: 800;
    font-size: 93px;
    line-height: 94.9%;
@@ -197,30 +195,20 @@ header {
    text-transform: uppercase;
 
    color: #9AD2DE;
-
-   /* border: 2px solid gray;
-   border-radius: 5px;  */
 }
 
 .header-section h6 {
-   /* position: absolute; */
    width: 484px;
    height: 48px;
    margin: calc(528px - 264px - 200px) 0 0 100px;
    left: 101px;
    top: 528px;
 
-   font-family: inherit;
-   font-style: normal;
-   font-weight: 400;
    font-size: 20px;
    line-height: 120%;
    /* or 24px */
 
    color: #000000;
-
-   /* border: 2px solid gray;
-   border-radius: 5px;  */
 }
 
 .program-section {
@@ -231,12 +219,6 @@ header {
    flex-direction: column;
    align-items: center;
    margin: 143px 0 0 100px;
-
-   /* position: absolute;
-   width: 1240px;
-   height: 1917px;
-   left: 100px;
-   top: 872px; */
 }
 
 .title-section {
@@ -250,10 +232,7 @@ header {
 }
 
 h2 {
-   font-family: inherit;
-   font-style: normal;
    font-size: 60px;
-   font-weight: 400;
    line-height: 72px;
    /* line-height: 120%; */
    letter-spacing: -0.02em;
@@ -271,19 +250,25 @@ h4 {
 }
 
 h5 {
-   font-family: inherit;
-   font-style: normal;
    font-size: 20px;
-   font-weight: 400;
    line-height: 24px;
    /* line-height: 120%; */
    text-align: center;
    color: #73A6B1;
+   
+}
+
+.program-section h5 {
    width: 588px;
    margin-top: 10px;
 }
 
-article {
+/* OUTLINE */
+.how-to-get-section h5 {
+   -webkit-text-stroke: 1px #000000;
+}
+
+.program-section article {
    width: 1240px;
    display: flex;
    flex: 0 1 auto;
@@ -314,12 +299,20 @@ article .row {
 }
 
 .title-content {
-   max-width: 452px;
    display: flex;
    flex: 0 1 auto;
    flex-direction: column;
+}
+
+.header-section .title-content {
+   max-width: 452px;
    align-items: flex-start;
    gap: 10px;
+}
+
+.how-to-get-section .title-content {
+   max-width: 739px;
+   align-items: center;
 }
 
 h3 {
@@ -343,12 +336,21 @@ h6 {
 }
 
 .main-content {
-   max-width: 292px;
    display: flex;
    flex: 0 1 auto;
    flex-direction: column;
+}
+
+.program-section .main-content {
+   max-width: 292px;
    align-items: flex-start;
    gap: 35px;
+}
+
+.how-to-get-section .main-content {
+   max-width: 439px;
+   align-items: center;
+   margin-top: 77px;
 }
 
 .item {
@@ -456,6 +458,30 @@ time {
    background-size: 222px, 347px;
    background-repeat: no-repeat;
    background-position: bottom right, center left;
+}
+
+.how-to-get-section {
+   max-width: 739px;
+   display: flex;
+   flex: 0 1 auto;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   margin: 68px auto 0;
+
+   /* border: 2px solid gray;
+   border-radius: 5px;  */
+}
+
+.how-to-get-section li + li {
+   border-left: 2px solid #9AD2DE;
+}
+
+.how-to-get-section li {
+   padding: 0 15px;
+   line-height: 100%;
+   margin: 17px 0 57px 0;
 }
 
 .how-to-get-section .btn {
