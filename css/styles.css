@@ -150,7 +150,7 @@ header {
    font-size: 18px; 
 }
 
-nav .btn {
+.header-section .btn {
    padding: 21px 28px;
    margin-left: -20px;
    border-radius: 87px;
