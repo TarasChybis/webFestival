@@ -92,6 +92,7 @@ conteiner {
    justify-content: center;
    font-family: 'Montserrat', sans-serif;
    color: black;
+   font-weight: 400;
    margin: 0 auto;
    padding: 0 auto;
    /* background: #F5F5F5; */
@@ -103,7 +104,6 @@ conteiner {
 
 .header-section {
    background: #F1FDFF;
-   /* position: absolute; */
    display: flex;
    flex-wrap: wrap;
    width: 1440px;
@@ -113,8 +113,7 @@ conteiner {
 }
 
 header {
-   /* position: absolute; */
-   max-width: 1256px;
+   min-width: 1256px;
    height: 64.19px;
    margin: 63px 0 0 100px;
 
@@ -123,63 +122,41 @@ header {
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   padding: 0px;
-   gap: 590px;
+   /* gap: 590px; */
 
    /* border: 2px solid gray;
    border-radius: 5px; */
    z-index: 1;
 }
 
-/* .logo {} */
-
 .navbar {
    display: flex;
-   flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   padding: 0px;
-   gap: 24px;
+   margin-left: auto;
+   /* gap: 24px; */
 
    width: 601px;
    height: 59px;
-
-   /* border: 2px solid gray;
-   border-radius: 5px;  */
 }
 
 .menu {
    display: flex;
+   flex: 1 1 auto;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   padding: 0px;
-   gap: 56px;
-
-   width: 369px;
-   height: 17px;
-   
-   font-family: inherit;
-   font-size: 18px;
-   /* border: 2px solid gray;
-   border-radius: 5px;  */
-}
-
-.menu li {
-   display: inline;
+   list-style: none;
+   font-size: 18px; 
 }
 
 nav .btn {
-   width: 208px;
-   height: 59px;
+   padding: 21px 28px;
+   margin-left: -20px;
    border-radius: 87px;
    background: #7AE5FD;
-   font-family: inherit;
    font-size: 18px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 96.9%;
-   /* or 17px */
+   line-height: 100%;
    text-align: center;
    text-transform: uppercase;
 }
@@ -410,19 +387,12 @@ time {
 }
 
 .find-out-more-section .btn {
-   max-width: 262px;
-   max-height: 64px;
-   padding: 21px 35px;
-   gap: 10px;
-   background: #7AE5FD;
-   border-radius: 87px;
-
-   font-family: inherit;
-   font-style: normal;
-   font-weight: 400;
    font-size: 18px;
    line-height: 100%;
    text-transform: uppercase;
+   padding: 21px 35px;
+   background: #7AE5FD;
+   border-radius: 87px;
 }
 
 .shirt-flag-section {
@@ -475,27 +445,24 @@ time {
    line-height: 120%;
 }
 
-/* #image_430 {
-   width: 347px;
-   height: 395.52px;
-   margin: 0 37.9px 0 0;
-
-   background: url(../img/430\ copy\ 1.png);
-   transform: rotate(6.92deg);
-   background-position: center;
-} */
-
-/* #image_556 {
-   width: 347px;
-   height: 395.52px;
-   
-   background: url(../img/image_556\ 1.png);
-   background-repeat: no-repeat;
-} */
-
-#podarunok {
+.shirt-flag-section .image {
+   display: flex;
+   flex: 0 1 auto;
    width: 430px;
    height: 439.61px;
-   
-   background: url(../img/Подарунок.png);
+
+   background-image: url(../img/image_556\ 1.png), url(../img/430\ copy\ 1.png);
+   /* transform: 0, rotate(6.92deg); */
+   background-size: 222px, 347px;
+   background-repeat: no-repeat;
+   background-position: bottom right, center left;
+}
+
+.how-to-get-section .btn {
+   font-size: 18px;
+   line-height: 100%;
+   text-transform: uppercase;
+   padding: 21px 35px;
+   background: #7AE5FD;
+   border-radius: 87px;
 }
