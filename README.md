@@ -11,7 +11,7 @@
 
 Front-end виконано з адаптивним верстанням.
 
-<img src=""/>
+<img src="../webFestival/img/webFestival.png"/>
 
 Технології, що використовуються:
 + **HTML, CSS**.
