@@ -152,6 +152,17 @@ ul {
    font-size: 18px;
 }
 
+/* .btn {
+   padding: 21px 28px;
+   margin-left: -20px;
+   border-radius: 87px;
+   background: #7AE5FD;
+   font-size: 18px;
+   line-height: 100%;
+   text-align: center;
+   text-transform: uppercase;
+} */
+
 .header-section .btn {
    padding: 21px 28px;
    margin-left: -20px;
@@ -315,10 +326,7 @@ article .row {
 }
 
 h3 {
-   font-family: inherit;
-   font-style: normal;
    font-size: 46px;
-   font-weight: 400;
    line-height: 55px;
    /* line-height: 120%; */
    letter-spacing: -0.02em;
@@ -495,10 +503,16 @@ time {
    border-radius: 87px;
 }
 
+
+/* ********* FOOTER ********* */
+
 footer {
+   display: flex;
+   flex-direction: column;
    background-color: #F9FADF;
    margin-top: 141px;
 }
+
 
 /* ********* FOOTER ********* */
 /* ********* КОНТАКТИ ********* */
@@ -511,8 +525,8 @@ footer {
    margin-top: 57px;
    margin-left: 95px;
 
-   /* border: 2px solid gray;
-   border-radius: 5px;  */
+   border: 2px solid gray;
+   border-radius: 5px; 
 }
 
 .contacts-section .title-content {
@@ -544,3 +558,79 @@ footer {
 .contacts-section h5 {
    width: 100%;
 }
+
+
+/* ********* FOOTER ********* */
+/* ********* EMAIL ********* */
+
+.email-form-section {
+   max-width: 1239px;
+   display: flex;
+   flex: 0 1 auto;
+   margin: 101px 100px 116px 101px;
+
+   background: #FFFFFF;
+   border-radius: 10px;
+
+   /* border: 2px solid gray;
+   border-radius: 5px;  */
+}
+
+.email-form-section .row {
+   display: flex;
+   flex: 0 1 auto;
+   margin: 37px 97px 54px 39px;
+   gap: 89px;
+}
+
+.email-form-section .image {
+   max-width: 508px;
+   height: 348px;
+}
+
+.email-form-section .main-content {
+   max-width: 506px;
+   align-self: self-end;
+   margin-top: 17px;
+}
+
+.email-form-section h3 {
+   font-size: 27px;
+   line-height: 120%;
+   text-transform: lowercase;
+}
+
+.email-form-section h3:first-letter {
+   text-transform: uppercase;
+}
+
+form {
+   margin-top: 8px;
+}
+
+input {
+   min-width: 506px;
+   /* height: 66px; */
+   background: #F9FADF;
+   border-radius: 61px;
+   margin-top: 31px;
+   padding: 21px 43px;
+   font-size: 20px;
+   line-height: 120%;
+}
+
+.email-form-section .btn {
+   padding: 22px 173px;
+   border-radius: 61px;
+   background: #7AE5FD;
+   font-size: 18px;
+   line-height: 120%;
+   text-align: center;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+
+
+
+
