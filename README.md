@@ -11,7 +11,8 @@
 
 Front-end виконано з адаптивним верстанням.
 
-<img src="../webFestival/img/webFestival.png"/>
+<img src="https://github.com/TarasChybis/webFestival/blob/main/img/webFestival.png" alt="webFestival"/>
+
 
 Технології, що використовуються:
 + **HTML, CSS**.
