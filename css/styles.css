@@ -525,8 +525,8 @@ footer {
    margin-top: 57px;
    margin-left: 95px;
 
-   border: 2px solid gray;
-   border-radius: 5px; 
+   /* border: 2px solid gray;
+   border-radius: 5px;  */
 }
 
 .contacts-section .title-content {
