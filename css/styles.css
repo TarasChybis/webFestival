@@ -12,21 +12,6 @@
    box-sizing: border-box;
 }
 
-html, body {
-   height: 100%;
-   width: 100%;
-   font-size: 100%;
-   line-height: 1;
-   font-size: 14px;
-   -ms-text-size-adjust: 100%;
-   -webkit-text-size-adjust: 100%;
-}
-
-body {
-   /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
-   box-sizing: border-box;
-}
-
 :focus, :active {
    outline: none;
 }
@@ -74,14 +59,71 @@ img {
    vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+html, body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+body {
+   box-sizing: border-box;
+
+   font-family: 'Montserrat', sans-serif;
+   color: black;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 120%;
+   font-style: normal;
+}
+
+h1 {
+   font-size: 93px;
+   line-height: 94.9%;
+   /* line-height: 88px; */
+   font-weight: 800;
+   color: #9AD2DE;
+   
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+
+   margin: calc(200px - 63px - 64.19px) 0 0 100px;
+}
+
+h2 {
+   font-size: 60px;
+   line-height: 72px;
+   /* line-height: 120%; */
+   font-weight: inherit;
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+}
+
+h3 {
+   font-size: 46px;
+   line-height: 55px;
+   /* line-height: 120%; */
+   font-weight: inherit;
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
+}
+
+h4, h5, h6 {
+   font-family: inherit;
    font-size: inherit;
    font-weight: inherit;
 }
 
-body {
-   width: 100%;
-   height: 100%;
+.p-font-size-20 {
+   font-size: 20px;
+   line-height: 24px;
+   /* line-height: 120%; */
+}
+
+.p-font-size-27 {
+   font-size: 27px;
+   line-height: 32px;
 }
 
 conteiner {
@@ -90,9 +132,6 @@ conteiner {
    flex: 1 1 auto;
    flex-direction: column;
    justify-content: center;
-   font-family: 'Montserrat', sans-serif;
-   color: black;
-   font-weight: 400;
    margin: 0 auto;
    padding: 0 auto;
    /* background: #F5F5F5; */
@@ -102,6 +141,10 @@ conteiner {
    display: flex;
    flex-direction: column;
 }
+
+
+/* ********* MAIN ********* */
+/* ********* ТИТУЛ + МЕНЮ  ********* */
 
 .header-section {
    background: #F1FDFF;
@@ -152,17 +195,6 @@ ul {
    font-size: 18px;
 }
 
-/* .btn {
-   padding: 21px 28px;
-   margin-left: -20px;
-   border-radius: 87px;
-   background: #7AE5FD;
-   font-size: 18px;
-   line-height: 100%;
-   text-align: center;
-   text-transform: uppercase;
-} */
-
 .header-section .btn {
    padding: 21px 28px;
    margin-left: -20px;
@@ -175,10 +207,8 @@ ul {
 }
 
 .header-section .image {
-   /* position: absolute; */
    width: 1448px;
    height: 100vh;
-   /* margin: calc(-729px + 148px - 3px) 0 0 425px; */
    margin: calc(-729px + 148px - 3px) 0 0 425px;
    /* left: 425px; */
    /* top: -148px; */
@@ -190,94 +220,57 @@ ul {
    background-position: top;
 }
 
-.header-section h1 {
-   width: 698px;
-   line-height: 264px;
-   margin: calc(200px - 63px - 64.19px) 0 0 100px;
-   /* left: 100px;
-   top: 200px; */
-
-   font-weight: 800;
-   font-size: 93px;
-   line-height: 94.9%;
-   /* or 88px */
-
-   letter-spacing: -0.02em;
-   text-transform: uppercase;
-
-   color: #9AD2DE;
-}
-
-.header-section h6 {
+.header-section .p-font-size-20 {
    width: 484px;
-   height: 48px;
+   /* height: 48px; */
    margin: calc(528px - 264px - 200px) 0 0 100px;
    left: 101px;
    top: 528px;
 
-   font-size: 20px;
-   line-height: 120%;
-   /* or 24px */
-
    color: #000000;
 }
+
+.header-section .title-content {
+   max-width: 452px;
+   display: flex;
+   flex: 0 1 auto;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 10px;
+}
+
+
+/* ********* MAIN ********* */
+/* ********* ПРОГРАМА ФЕСТИВАЛЮ ********* */
 
 .program-section {
    max-width: 1240px;
    display: flex;
    flex: 0 1 auto;
-   flex-wrap: wrap;
    flex-direction: column;
    align-items: center;
    margin: 143px 0 0 100px;
 }
 
-.title-section {
-   max-width: 784px;
+.program-section .title-content {
+   /* max-width: 784px; */
    display: flex;
    flex: 0 1 auto;
-   flex-wrap: wrap;
    flex-direction: column;
    align-items: center;
    margin: 0 0 4px 0;
 }
 
-h2 {
-   font-size: 60px;
-   line-height: 72px;
-   /* line-height: 120%; */
-   letter-spacing: -0.02em;
-   text-transform: uppercase;
-}
-
-h4 {
-   font-family: inherit;
-   font-style: normal;
-   font-size: 27px;
-   font-weight: 400;
-   line-height: 32px;
-   /* line-height: 120%; */
+.program-section .p-font-size-27 {
    text-align: center;
 }
 
-h5 {
-   font-size: 20px;
-   line-height: 24px;
-   /* line-height: 120%; */
-}
-
-.program-section h5 {
+.program-section .p-font-size-20 {
    width: 588px;
    margin-top: 10px;
    text-align: center;
    color: #73A6B1;
 }
-
-/* OUTLINE */
-.how-to-get-section h5 {
-   -webkit-text-stroke: 1px #000000;
-}
-
 .program-section article {
    width: 1240px;
    display: flex;
@@ -296,68 +289,39 @@ article .row {
    justify-content: space-between;
 }
 
-.content {
+.text {
+   max-width: calc(1240px - 585px - 40px - 40px - 40px);
+   display: flex;
+   flex: 0 1 auto;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.program-section .title-text {
+   /* max-width: 452px; */
    display: flex;
    flex: 0 1 auto;
    flex-direction: column;
    align-items: flex-start;
-   padding: 0px;
-   gap: 45px;
-
-   max-width: 452px;
-   max-height: 431px;
+   /* gap: 10px;
+   margin: 0 0 4px 0; */
 }
 
-.title-content {
-   display: flex;
-   flex: 0 1 auto;
-   flex-direction: column;
+.program-section .text .p-font-size-20 {
+   max-width: calc(1240px - 585px - 40px - 40px - 40px);
+   margin-top: 10px;
+   text-align: start;
+   color: #73A6B1;
 }
 
-.header-section .title-content {
-   max-width: 452px;
-   align-items: flex-start;
-   gap: 10px;
-}
-
-.how-to-get-section .title-content {
-   max-width: 739px;
-   align-items: center;
-}
-
-h3 {
-   font-size: 46px;
-   line-height: 55px;
-   /* line-height: 120%; */
-   letter-spacing: -0.02em;
-   text-transform: uppercase;
-}
-
-h6 {
-   font-family: inherit;
-   font-style: normal;
-   font-size: 20px;
-   font-weight: 400;
-   line-height: 24px;
-   /* line-height: 120%; */
-}
-
-.main-content {
-   display: flex;
-   flex: 0 1 auto;
-   flex-direction: column;
-}
-
-.program-section .main-content {
+.program-section .main-text {
    max-width: 292px;
+   display: flex;
+   flex: 0 1 auto;
+   flex-direction: column;
    align-items: flex-start;
    gap: 35px;
-}
-
-.how-to-get-section .main-content {
-   max-width: 439px;
-   align-items: center;
-   margin-top: 77px;
 }
 
 .item {
@@ -371,15 +335,6 @@ h6 {
    gap: 10px;
 }
 
-p {
-   font-family: inherit;
-   font-style: normal;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 19px;
-   /* line-height: 120%; */
-}
-
 time {
    font-family: inherit;
    font-style: normal;
@@ -389,6 +344,15 @@ time {
    /* line-height: 120%; */
    color: #3D8C9D;
 }
+
+.program-section .image {
+   max-width: 585px;
+   max-height: 424px;
+}
+
+
+/* ********* MAIN ********* */
+/* ********* ДІЗНАТИСЯ БІЛЬШЕ ********* */
 
 .find-out-more-section {
    display: flex;
@@ -406,6 +370,10 @@ time {
    background: #7AE5FD;
    border-radius: 87px;
 }
+
+
+/* ********* MAIN ********* */
+/* ********* ФУТБОЛКА ТА ПРАПОР ********* */
 
 .shirt-flag-section {
    display: flex;
@@ -431,8 +399,11 @@ time {
    margin: 270px 18px 191px 28px;
    background: #F2FEFF;
    border-radius: 10px;
-   /* object-fit: cover;
-   object-position: top; */
+   object-fit: cover;
+   object-position: top;
+
+   /* border: 2px solid gray;
+   border-radius: 5px;  */
 }
 
 .shirt-flag-section .row {
@@ -441,6 +412,7 @@ time {
    margin: -81.61px 137px -81px 40px;
    display: flex;
    flex: 0 1 auto;
+   justify-content: space-between;
    /* flex-wrap: wrap; */
    align-items: center;
    gap: 241px;
@@ -450,11 +422,13 @@ time {
 }
 
 .shirt-flag-section p {
-   font-family: inherit;
-   font-style: normal;
    font-size: 27.271px;
-   font-weight: 400;
    line-height: 120%;
+   max-width: 391px;
+   padding: 0;
+
+   /* border: 2px solid gray;
+   border-radius: 5px;  */
 }
 
 .shirt-flag-section .image {
@@ -465,10 +439,15 @@ time {
 
    background-image: url(../img/image_556\ 1.png), url(../img/430\ copy\ 1.png);
    /* transform: 0, rotate(6.92deg); */
-   background-size: 222px, 347px;
+   background-size: 222px 344px, 90%;
    background-repeat: no-repeat;
-   background-position: bottom right, center left;
+   background-position: bottom right, top left;
+
 }
+
+
+/* ********* MAIN ********* */
+/* ********* ЯК ПОТРАПИТИ ********* */
 
 .how-to-get-section {
    max-width: 739px;
@@ -482,6 +461,41 @@ time {
 
    /* border: 2px solid gray;
    border-radius: 5px;  */
+}
+
+.how-to-get-section .title-content {
+   max-width: 739px;
+   display: flex;
+   flex: 0 1 auto;
+   flex-direction: column;
+   align-items: center;
+}
+
+.p-outline {
+   font-size: 20px;
+   line-height: 24px;
+   /* line-height: 120%; */
+   color: #73A6B1;
+   -webkit-text-stroke: 1px #000000;
+   text-align: center;
+   margin-top: 5px;
+}
+
+.how-to-get-section .main-content {
+   max-width: 439px;
+   display: flex;
+   flex: 0 1 auto;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 77px;
+}
+
+.how-to-get-section ul {
+   font-size: 60px;
+   line-height: 72px;
+   /* line-height: 120%; */
+   letter-spacing: -0.02em;
+   text-transform: uppercase;
 }
 
 .how-to-get-section li + li {
@@ -531,10 +545,16 @@ footer {
 
 .contacts-section .title-content {
    max-width: 336px;
+   display: flex;
+   flex: 0 1 auto;
+   flex-direction: column;
 }
 
 .contacts-section .main-content {
    max-width: 444px;
+   display: flex;
+   flex: 0 1 auto;
+   flex-direction: column;
    justify-content: space-between;
    gap: 57px;
 }
@@ -545,18 +565,18 @@ footer {
    flex-wrap: wrap;
 }
 
-.font-weight-700 {
-   font-weight: 700;
-}
-
 .contacts-section .icon {
-   width: 33px;
-   height: 33px;
+   max-width: 33px;
+   max-height: 33px;
    margin: 0 16px 6px 0;
 }
 
-.contacts-section h5 {
+.contacts-section .p-font-size-20 {
    width: 100%;
+}
+
+.p-font-weight-700 {
+   font-weight: 700;
 }
 
 
@@ -590,18 +610,16 @@ footer {
 
 .email-form-section .main-content {
    max-width: 506px;
+   display: flex;
+   flex: 0 1 auto;
+   flex-direction: column;
    align-self: self-end;
    margin-top: 17px;
 }
 
-.email-form-section h3 {
+.email-form-section p {
    font-size: 27px;
    line-height: 120%;
-   text-transform: lowercase;
-}
-
-.email-form-section h3:first-letter {
-   text-transform: uppercase;
 }
 
 form {
